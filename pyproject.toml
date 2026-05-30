@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "api-leakproof"
+version = "0.1.0"
+description = "Monitor API keys for unauthorized usage on third-party platforms"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "PySide6>=6.6",
+    "APScheduler>=3.10",
+    "requests>=2.31",
+    "cryptography>=41.0",
+    "pyobjc-framework-UserNotifications>=10.0",
+]
+
+[project.scripts]
+api-leakproof = "app.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app", "proxy", "monitor", "db", "shared", "config"]

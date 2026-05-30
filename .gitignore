@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual env
+venv/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Data
+*.db
+.api-leakproof/
+.encryption_key
+
+# macOS
+.DS_Store
+
+# Coverage
+htmlcov/
+.coverage
