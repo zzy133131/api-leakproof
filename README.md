@@ -43,7 +43,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/api-leakproof.git
+git clone https://github.com/zzy133131/api-leakproof.git
 cd api-leakproof
 
 # 创建虚拟环境（推荐）
